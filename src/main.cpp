@@ -21,4 +21,9 @@ int ledPin = 13;    ///< LED connected to digital pin 13
  * - Sets touchPin as INPUT
  * - Sets ledPin as OUTPUT
  */
+void setup() {
+  Serial.begin(9600);
+  pinMode(touchPin, INPUT);
+  pinMode(ledPin, OUTPUT);
+}
 
